@@ -3,9 +3,9 @@
 ## フェーズ 1: 現行資産の精密分析
 このフェーズでは、COBOL コピーブックと DDL を読み解き、現行のデータ構造を詳細に把握します。
 
-- [ ] **タスク 1:** 顧客・アカウント関連のコピーブック分析 (`CUSTREC.cpy`, `CVACT01Y.cpy` 等)
-- [ ] **タスク 2:** トランザクション・カード関連のコピーブック分析 (`CVTRA05Y.cpy`, `CVCRD01Y.cpy` 等)
-- [ ] **タスク 3:** DB2 および IMS 関連の定義分析
+- [x] **タスク 1:** 顧客・アカウント関連のコピーブック分析 (`CUSTREC.cpy`, `CVACT01Y.cpy` 等) e0584d1
+- [x] **タスク 2:** トランザクション・カード関連のコピーブック分析 (`CVTRA05Y.cpy`, `CVCRD01Y.cpy` 等) e0584d1
+- [x] **タスク 3:** DB2 および IMS 関連の定義分析 e0584d1
 - [ ] **タスク: Conductor - User Manual Verification 'フェーズ 1: 現行資産の精密分析' (Protocol in workflow.md)**
 
 ## フェーズ 2: PostgreSQL スキーマ設計
