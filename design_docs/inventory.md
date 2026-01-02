@@ -32,4 +32,4 @@
 | COUSR01C.cbl | Online | User Add | [x] | |
 | COUSR02C.cbl | Online | User Update | [x] | |
 | COUSR03C.cbl | Online | User Delete | [x] | |
-| CSUTLDTC.cbl | Utility | Date Utility | [ ] | |
+| CSUTLDTC.cbl | Utility | Date Utility | [x] | |
