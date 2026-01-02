@@ -160,3 +160,33 @@ CREATE TABLE transaction_category (
     description             VARCHAR(50),         -- TRAN-CAT-TYPE-DESC
     PRIMARY KEY (tran_type_cd, tran_cat_cd)
 );
+
+-- ============================================================================
+-- Task 4: インデックスおよび制約
+-- ============================================================================
+
+-- Foreign Keys
+-- カード -> アカウント
+ALTER TABLE card ADD CONSTRAINT fk_card_account
+    FOREIGN KEY (acct_id) REFERENCES account(acct_id);
+
+-- トランザクション履歴 -> カード
+ALTER TABLE transaction_history ADD CONSTRAINT fk_tran_card
+    FOREIGN KEY (card_num) REFERENCES card(card_num);
+
+-- Indexes for Performance
+-- 顧客検索用 (氏名)
+CREATE INDEX idx_cust_name ON customer(last_name, first_name);
+-- 顧客検索用 (SSN)
+CREATE INDEX idx_cust_ssn ON customer(ssn);
+
+-- カード検索用 (アカウントID) - FK用
+CREATE INDEX idx_card_acct ON card(acct_id);
+
+-- トランザクション検索用 (カード番号 + 日時)
+CREATE INDEX idx_tran_card_ts ON transaction_history(card_num, proc_ts);
+-- トランザクション検索用 (処理日時)
+CREATE INDEX idx_tran_proc_ts ON transaction_history(proc_ts);
+
+-- 不正検知検索用
+CREATE INDEX idx_auth_fraud_card ON auth_fraud(card_num);

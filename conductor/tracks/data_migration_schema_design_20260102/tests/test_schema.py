@@ -9,18 +9,22 @@ def test_schema_content():
     with open(schema_path, "r", encoding="utf-8") as f:
         content = f.read()
     
-    expected_tables = [
+    expected_strings = [
         "CREATE TABLE customer",
         "CREATE TABLE account",
         "CREATE TABLE card",
         "CREATE TABLE transaction_history",
         "CREATE TABLE auth_fraud",
         "CREATE TABLE transaction_type",
-        "CREATE TABLE transaction_category"
+        "CREATE TABLE transaction_category",
+        "ALTER TABLE card ADD CONSTRAINT fk_card_account",
+        "ALTER TABLE transaction_history ADD CONSTRAINT fk_tran_card",
+        "CREATE INDEX idx_cust_name",
+        "CREATE INDEX idx_tran_card_ts"
     ]
     
-    for table in expected_tables:
-        assert table in content, f"Expected '{table}' not found in schema.sql"
+    for s in expected_strings:
+        assert s in content, f"Expected '{s}' not found in schema.sql"
 
 if __name__ == "__main__":
     try:
