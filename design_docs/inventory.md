@@ -14,22 +14,22 @@
 | CBTRN01C.cbl | Batch | Transaction Proc | [ ] | |
 | CBTRN02C.cbl | Batch | Transaction Proc | [ ] | |
 | CBTRN03C.cbl | Batch | Transaction Report | [ ] | |
-| COACTUPC.cbl | Online | Account Update | [ ] | |
-| COACTVWC.cbl | Online | Account View | [ ] | |
-| COADM01C.cbl | Online | Admin Menu | [ ] | |
-| COBIL00C.cbl | Online | Bill Payment | [ ] | |
-| COBSWAIT.cbl | Online | Wait Utility? | [ ] | |
-| COCRDLIC.cbl | Online | Card List | [ ] | |
-| COCRDSLC.cbl | Online | Card Select | [ ] | |
-| COCRDUPC.cbl | Online | Card Update | [ ] | |
-| COMEN01C.cbl | Online | Menu | [ ] | |
-| CORPT00C.cbl | Online | Report Request | [ ] | |
-| COSGN00C.cbl | Online | Signon | [ ] | |
-| COTRN00C.cbl | Online | Tran List | [ ] | |
-| COTRN01C.cbl | Online | Tran View | [ ] | |
-| COTRN02C.cbl | Online | Tran Add | [ ] | |
-| COUSR00C.cbl | Online | User List | [ ] | |
-| COUSR01C.cbl | Online | User Add | [ ] | |
-| COUSR02C.cbl | Online | User Update | [ ] | |
-| COUSR03C.cbl | Online | User Delete | [ ] | |
+| COACTUPC.cbl | Online | Account Update | [x] | |
+| COACTVWC.cbl | Online | Account View | [x] | |
+| COADM01C.cbl | Online | Admin Menu | [x] | |
+| COBIL00C.cbl | Online | Bill Payment | [x] | |
+| COBSWAIT.cbl | Online | Wait Utility? | [x] | |
+| COCRDLIC.cbl | Online | Card List | [x] | |
+| COCRDSLC.cbl | Online | Card Select | [x] | |
+| COCRDUPC.cbl | Online | Card Update | [x] | |
+| COMEN01C.cbl | Online | Menu | [x] | |
+| CORPT00C.cbl | Online | Report Request | [x] | |
+| COSGN00C.cbl | Online | Signon | [x] | |
+| COTRN00C.cbl | Online | Tran List | [x] | |
+| COTRN01C.cbl | Online | Tran View | [x] | |
+| COTRN02C.cbl | Online | Tran Add | [x] | |
+| COUSR00C.cbl | Online | User List | [x] | |
+| COUSR01C.cbl | Online | User Add | [x] | |
+| COUSR02C.cbl | Online | User Update | [x] | |
+| COUSR03C.cbl | Online | User Delete | [x] | |
 | CSUTLDTC.cbl | Utility | Date Utility | [ ] | |
