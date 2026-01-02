@@ -30,9 +30,9 @@ CICS トランザクションに関連するオンラインプログラム（主
 - [x] **タスク 1:** 共通日付処理などのユーティリティ設計書作成 (`CSUTLDTC` 等) 3c94ef1
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 4: ユーティリティ・その他の解析と設計書作成' (Protocol in workflow.md)**
 
-## フェーズ 5: 最終レビューと品質確認
+## フェーズ 5: 最終レビューと品質確認 [checkpoint: f05c577]
 すべての設計書が仕様を満たしているか、日本語として適切かを確認します。
 
 - [x] **タスク 1:** 全設計書の整合性チェック（相互参照や用語の一貫性） f9fdde7
 - [x] **タスク 2:** 移行の考慮事項セクションの最終精査 f9fdde7
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 5: 最終レビューと品質確認' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 5: 最終レビューと品質確認' (Protocol in workflow.md)**
