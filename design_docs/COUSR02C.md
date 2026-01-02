@@ -10,3 +10,6 @@
 1. `EXEC CICS READ UPDATE` による取得。
 2. 変更内容の反映。
 3. `EXEC CICS REWRITE` による更新。
+
+## 4. 移行への考慮事項
+- ユーザー管理機能は、Cognito や Auth0 などの IDaaS への移行を検討する。
