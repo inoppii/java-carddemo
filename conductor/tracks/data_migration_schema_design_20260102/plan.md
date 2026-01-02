@@ -17,10 +17,10 @@
 - [x] **タスク 4:** インデックスおよび制約（外部キー等）の定義 740a648
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 2: PostgreSQL スキーマ設計' (Protocol in workflow.md)**
 
-## フェーズ 3: ドキュメント化と検証
+## フェーズ 3: ドキュメント化と検証 [checkpoint: b4a1b6e]
 設計内容を整理し、移行の準備を整えます。
 
 - [x] **タスク 1:** データマッピングドキュメント（現行 vs 新規）の作成 6ee7ce9
 - [x] **タスク 2:** ER図の作成（Mermaid または画像） 6ee7ce9
 - [x] **タスク 3:** DDL ファイルの生成と基本動作検証 6ee7ce9
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 3: ドキュメント化と検証' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 3: ドキュメント化と検証' (Protocol in workflow.md)**
