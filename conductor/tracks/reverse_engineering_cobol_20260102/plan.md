@@ -16,13 +16,13 @@ CICS トランザクションに関連するオンラインプログラム（主
 - [x] **タスク 4:** カード・トランザクション操作系プログラムの設計書作成 (`COCRD*`, `COTRN*`, `COBIL00C` 等) cb99537
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 2: オンライン・プログラム (CO*) の解析と設計書作成' (Protocol in workflow.md)**
 
-## フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成
+## フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成 [checkpoint: 8d33904]
 夜間バッチやデータ更新処理を担うプログラムを解析します。
 
 - [x] **タスク 1:** アカウント・顧客更新系バッチの設計書作成 (`CBACT01C` ~ `04C`, `CBCUS01C` 等) 2fea434
 - [x] **タスク 2:** トランザクション処理・レポート系バッチの設計書作成 (`CBTRN01C` ~ `03C` 等) 2fea434
 - [x] **タスク 3:** インポート・エクスポート・その他バッチの設計書作成 (`CBIMPORT`, `CBEXPORT`, `CBSTM03*` 等) 2fea434
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成' (Protocol in workflow.md)**
 
 ## フェーズ 4: ユーティリティ・その他の解析と設計書作成
 共通ユーティリティや、その他の補助的なプログラムを解析します。
