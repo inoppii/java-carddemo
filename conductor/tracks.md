@@ -4,5 +4,5 @@
 
 ---
 
-## [ ] トラック: 現行資産の分析と Cloud SQL PostgreSQL へのデータスキーマ設計
-*リンク: [./conductor/tracks/data_migration_schema_design_20260102/](./conductor/tracks/data_migration_schema_design_20260102/)*
+## [~] トラック: アプリケーションロジックの移行の準備として、プログラムファイルごとに、詳細設計書を作成する
+*リンク: [./conductor/tracks/reverse_engineering_cobol_20260102/](./conductor/tracks/reverse_engineering_cobol_20260102/)*

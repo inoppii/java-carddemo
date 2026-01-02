@@ -66,6 +66,21 @@ All tasks follow a strict lifecycle:
     - **Action:** Stage the modified `plan.md` file.
     - **Action:** Commit this change with a descriptive message (e.g., `conductor(plan): Mark task 'Create user model' as complete`).
 
+### Parallel Execution Protocol
+
+To optimize velocity, independent tasks within the same phase may be executed in parallel (or batched) when explicitly authorized.
+
+**Criteria for Parallelism:**
+1.  **Independence:** Tasks must not depend on each other's outputs or state.
+2.  **Isolation:** Tasks must modify distinct sets of files to avoid merge conflicts.
+
+**Workflow:**
+1.  **Selection:** Identify multiple eligible, independent tasks from the current phase in `plan.md`.
+2.  **Status Update:** Mark all selected tasks as `[~]` (In Progress) in `plan.md` simultaneously.
+3.  **Execution:** Implement the tasks. You may switch context between them as needed, but verify them independently.
+4.  **Verification:** Each task must pass its specific tests and quality gates.
+5.  **Completion:** Commit and mark each task as `[x]` individually as they are finished.
+
 ### Phase Completion Verification and Checkpointing Protocol
 
 **Trigger:** This protocol is executed immediately after a task is completed that also concludes a phase in `plan.md`.

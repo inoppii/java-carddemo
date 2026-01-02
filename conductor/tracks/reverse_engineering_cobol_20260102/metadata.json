@@ -1,0 +1,8 @@
+{
+  "track_id": "reverse_engineering_cobol_20260102",
+  "type": "chore",
+  "status": "new",
+  "created_at": "2026-01-02T12:30:00Z",
+  "updated_at": "2026-01-02T12:30:00Z",
+  "description": "アプリケーションロジックの移行の準備として、プログラムファイルごとに、詳細設計書を作成する"
+}
