@@ -7,14 +7,14 @@
 - [x] **タスク 2:** `app/cbl/` 内の全プログラムリストの作成と進捗管理表の初期化 60bb471
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 1: 環境準備とインベントリ作成' (Protocol in workflow.md)**
 
-## フェーズ 2: オンライン・プログラム (CO*) の解析と設計書作成
+## フェーズ 2: オンライン・プログラム (CO*) の解析と設計書作成 [checkpoint: 72c3ee0]
 CICS トランザクションに関連するオンラインプログラム（主に画面操作を伴うもの）を解析します。
 
 - [x] **タスク 1:** 共通コピーブック・共通領域の解析レポート作成 cb99537
 - [x] **タスク 2:** 認証・メニュー系プログラムの設計書作成 (`COSGN00C`, `COMEN01C`, `COADM01C` 等) cb99537
 - [x] **タスク 3:** 顧客・アカウント操作系プログラムの設計書作成 (`COACTVWC`, `COACTUPC`, `COUSR*` 等) cb99537
 - [x] **タスク 4:** カード・トランザクション操作系プログラムの設計書作成 (`COCRD*`, `COTRN*`, `COBIL00C` 等) cb99537
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 2: オンライン・プログラム (CO*) の解析と設計書作成' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 2: オンライン・プログラム (CO*) の解析と設計書作成' (Protocol in workflow.md)**
 
 ## フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成
 夜間バッチやデータ更新処理を担うプログラムを解析します。
