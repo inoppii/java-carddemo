@@ -2,18 +2,18 @@
 
 | プログラム名 | 種類 | 概要 (仮) | ステータス | 設計書リンク |
 |---|---|---|---|---|
-| CBACT01C.cbl | Batch | Account Update | [ ] | |
-| CBACT02C.cbl | Batch | Account Update | [ ] | |
-| CBACT03C.cbl | Batch | Account Update | [ ] | |
-| CBACT04C.cbl | Batch | Account Interest Calc | [ ] | |
-| CBCUS01C.cbl | Batch | Customer Update | [ ] | |
-| CBEXPORT.cbl | Batch | Data Export | [ ] | |
-| CBIMPORT.cbl | Batch | Data Import | [ ] | |
-| CBSTM03A.CBL | Batch | Statement Gen | [ ] | |
-| CBSTM03B.CBL | Batch | Statement Gen | [ ] | |
-| CBTRN01C.cbl | Batch | Transaction Proc | [ ] | |
-| CBTRN02C.cbl | Batch | Transaction Proc | [ ] | |
-| CBTRN03C.cbl | Batch | Transaction Report | [ ] | |
+| CBACT01C.cbl | Batch | Account Update | [x] | |
+| CBACT02C.cbl | Batch | Account Update | [x] | |
+| CBACT03C.cbl | Batch | Account Update | [x] | |
+| CBACT04C.cbl | Batch | Account Interest Calc | [x] | |
+| CBCUS01C.cbl | Batch | Customer Update | [x] | |
+| CBEXPORT.cbl | Batch | Data Export | [x] | |
+| CBIMPORT.cbl | Batch | Data Import | [x] | |
+| CBSTM03A.CBL | Batch | Statement Gen | [x] | |
+| CBSTM03B.CBL | Batch | Statement Gen | [x] | |
+| CBTRN01C.cbl | Batch | Transaction Proc | [x] | |
+| CBTRN02C.cbl | Batch | Transaction Proc | [x] | |
+| CBTRN03C.cbl | Batch | Transaction Report | [x] | |
 | COACTUPC.cbl | Online | Account Update | [x] | |
 | COACTVWC.cbl | Online | Account View | [x] | |
 | COADM01C.cbl | Online | Admin Menu | [x] | |
