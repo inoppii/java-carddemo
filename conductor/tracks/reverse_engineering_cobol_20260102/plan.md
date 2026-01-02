@@ -24,11 +24,11 @@ CICS トランザクションに関連するオンラインプログラム（主
 - [x] **タスク 3:** インポート・エクスポート・その他バッチの設計書作成 (`CBIMPORT`, `CBEXPORT`, `CBSTM03*` 等) 2fea434
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 3: バッチ・プログラム (CB*) の解析と設計書作成' (Protocol in workflow.md)**
 
-## フェーズ 4: ユーティリティ・その他の解析と設計書作成
+## フェーズ 4: ユーティリティ・その他の解析と設計書作成 [checkpoint: 1a6bf47]
 共通ユーティリティや、その他の補助的なプログラムを解析します。
 
 - [x] **タスク 1:** 共通日付処理などのユーティリティ設計書作成 (`CSUTLDTC` 等) 3c94ef1
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 4: ユーティリティ・その他の解析と設計書作成' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 4: ユーティリティ・その他の解析と設計書作成' (Protocol in workflow.md)**
 
 ## フェーズ 5: 最終レビューと品質確認
 すべての設計書が仕様を満たしているか、日本語として適切かを確認します。
