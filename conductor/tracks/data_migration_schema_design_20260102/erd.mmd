@@ -1,0 +1,43 @@
+erDiagram
+    CUSTOMER ||--o{ CARD_XREF : has
+    ACCOUNT ||--o{ CARD : has
+    ACCOUNT ||--o{ CARD_XREF : has
+    CARD ||--o{ TRANSACTION_HISTORY : initiates
+    CARD ||--o{ AUTH_FRAUD : has
+    
+    CUSTOMER {
+        INTEGER cust_id PK
+        VARCHAR first_name
+        VARCHAR last_name
+        INTEGER ssn
+    }
+
+    ACCOUNT {
+        BIGINT acct_id PK
+        NUMERIC curr_bal
+        NUMERIC credit_limit
+    }
+
+    CARD {
+        VARCHAR card_num PK
+        BIGINT acct_id FK
+        DATE expiration_date
+    }
+
+    TRANSACTION_HISTORY {
+        VARCHAR tran_id PK
+        VARCHAR card_num FK
+        NUMERIC amount
+        TIMESTAMP proc_ts
+    }
+
+    AUTH_FRAUD {
+        VARCHAR card_num PK
+        TIMESTAMP auth_ts PK
+        CHAR auth_fraud
+    }
+
+    TRANSACTION_TYPE {
+        VARCHAR tran_type_cd PK
+        VARCHAR description
+    }
