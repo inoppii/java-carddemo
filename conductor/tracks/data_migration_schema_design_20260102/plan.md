@@ -8,14 +8,14 @@
 - [x] **タスク 3:** DB2 および IMS 関連の定義分析 e0584d1
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 1: 現行資産の精密分析' (Protocol in workflow.md)**
 
-## フェーズ 2: PostgreSQL スキーマ設計
+## フェーズ 2: PostgreSQL スキーマ設計 [checkpoint: abb4749]
 分析結果に基づき、PostgreSQL 用のモダンなスキーマを設計します。
 
 - [x] **タスク 1:** 顧客・アカウント・カード情報のテーブル設計 85496ca
 - [x] **タスク 2:** トランザクション履歴・承認データのテーブル設計 85496ca
 - [x] **タスク 3:** 参照データ（トランザクションタイプ等）のテーブル設計 85496ca
 - [x] **タスク 4:** インデックスおよび制約（外部キー等）の定義 740a648
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 2: PostgreSQL スキーマ設計' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 2: PostgreSQL スキーマ設計' (Protocol in workflow.md)**
 
 ## フェーズ 3: ドキュメント化と検証
 設計内容を整理し、移行の準備を整えます。
