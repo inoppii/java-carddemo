@@ -11,5 +11,5 @@
 Google Cloud Build や GitHub Actions を設定します。
 
 - [x] **タスク 1:** Cloud Build 設定ファイル (`cloudbuild.yaml`) の作成。 be7cdc2
-- [ ] **タスク 2:** Terraform によるインフラ定義 (Cloud Run, Cloud SQL)。
+- [x] **タスク 2:** Terraform によるインフラ定義 (Cloud Run, Cloud SQL)。 b7426b6
 - [ ] **タスク: Conductor - User Manual Verification**
