@@ -3,7 +3,7 @@
 ## フェーズ 1: コンテナ化
 アプリケーションを Docker コンテナ化します。
 
-- [ ] **タスク 1:** バックエンド (Java) の Dockerfile 作成とビルド検証。
+- [x] **タスク 1:** バックエンド (Java) の Dockerfile 作成とビルド検証。 850ac05
 - [ ] **タスク 2:** フロントエンド (React) の Dockerfile (Nginx等) 作成とビルド検証。
 - [ ] **タスク: Conductor - User Manual Verification**
 
