@@ -4,7 +4,7 @@
 アプリケーションを Docker コンテナ化します。
 
 - [x] **タスク 1:** バックエンド (Java) の Dockerfile 作成とビルド検証。 850ac05
-- [ ] **タスク 2:** フロントエンド (React) の Dockerfile (Nginx等) 作成とビルド検証。
+- [x] **タスク 2:** フロントエンド (React) の Dockerfile (Nginx等) 作成とビルド検証。 ae037cc
 - [ ] **タスク: Conductor - User Manual Verification**
 
 ## フェーズ 2: デプロイ自動化
