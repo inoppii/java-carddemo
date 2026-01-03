@@ -17,10 +17,11 @@
 ## Key Features
 - **Modern Web Interface:**
     - 直感的でレスポンシブな日本語によるモダン Web UI。
-    - ユーザーロールに応じたダッシュボードと管理画面。
+    - ユーザーロールに応じたダッシュボードと、管理者向けユーザー管理・システム設定画面。
 - **Core Management:**
     - 顧客 (Customer)、アカウント (Account)、クレジットカード (Credit Card) の管理機能。
     - トランザクション (Transaction) の履歴照会と追加。
+    - 口座情報・カード情報の更新および申請。
     - 請求書支払い (Bill Payment) 機能。
 - **Batch Processing:**
     - 日次バッチ処理によるデータ更新。
