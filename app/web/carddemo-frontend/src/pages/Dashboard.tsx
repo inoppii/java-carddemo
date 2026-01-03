@@ -9,7 +9,8 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import HistoryIcon from '@mui/icons-material/History';
 import EditIcon from '@mui/icons-material/Edit';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import SettingsIcon from '@mui/icons-material/Settings';
+import PeopleIcon from '@mui/icons-material/People';
 
 const Dashboard: React.FC = () => {
   const [accounts, setAccounts] = useState<any[]>([]);
@@ -31,14 +32,24 @@ const Dashboard: React.FC = () => {
           ようこそ、{user.username} 様
         </Typography>
         {isAdmin && (
-          <Button 
-            variant="contained" 
-            color="secondary" 
-            startIcon={<AdminPanelSettingsIcon />}
-            onClick={() => navigate('/admin/users')}
-          >
-            管理者メニュー: ユーザー管理
-          </Button>
+          <Box sx={{ display: 'flex', gap: 1 }}>
+            <Button 
+              variant="contained" 
+              color="secondary" 
+              startIcon={<PeopleIcon />}
+              onClick={() => navigate('/admin/users')}
+            >
+              ユーザー管理
+            </Button>
+            <Button 
+              variant="contained" 
+              color="secondary" 
+              startIcon={<SettingsIcon />}
+              onClick={() => navigate('/admin/settings')}
+            >
+              システム設定
+            </Button>
+          </Box>
         )}
       </Box>
       

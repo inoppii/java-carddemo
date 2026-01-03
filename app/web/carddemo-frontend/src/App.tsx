@@ -8,6 +8,7 @@ import TransactionList from './pages/TransactionList';
 import AccountEdit from './pages/AccountEdit';
 import CardList from './pages/CardList';
 import UserManagement from './pages/UserManagement';
+import SystemSettings from './pages/SystemSettings';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <Route path="/accounts/edit/:accountId" element={<AccountEdit />} />
           <Route path="/cards/:accountId" element={<CardList />} />
           <Route path="/admin/users" element={<UserManagement />} />
+          <Route path="/admin/settings" element={<SystemSettings />} />
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
       </BrowserRouter>
