@@ -9,11 +9,13 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import HistoryIcon from '@mui/icons-material/History';
 import EditIcon from '@mui/icons-material/Edit';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 
 const Dashboard: React.FC = () => {
   const [accounts, setAccounts] = useState<any[]>([]);
   const user = JSON.parse(localStorage.getItem('user') || '{}');
   const navigate = useNavigate();
+  const isAdmin = user.role === 'ADMIN';
 
   useEffect(() => {
     // デモ用: 顧客ID 1 の口座を取得
@@ -24,9 +26,21 @@ const Dashboard: React.FC = () => {
 
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Typography variant="h4" gutterBottom>
-        ようこそ、{user.username} 様
-      </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
+        <Typography variant="h4">
+          ようこそ、{user.username} 様
+        </Typography>
+        {isAdmin && (
+          <Button 
+            variant="contained" 
+            color="secondary" 
+            startIcon={<AdminPanelSettingsIcon />}
+            onClick={() => navigate('/admin/users')}
+          >
+            管理者メニュー: ユーザー管理
+          </Button>
+        )}
+      </Box>
       
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
