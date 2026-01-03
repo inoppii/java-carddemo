@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import TransactionList from './pages/TransactionList';
 import AccountEdit from './pages/AccountEdit';
+import CardList from './pages/CardList';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/transactions/:accountId" element={<TransactionList />} />
           <Route path="/accounts/edit/:accountId" element={<AccountEdit />} />
+          <Route path="/cards/:accountId" element={<CardList />} />
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
       </BrowserRouter>

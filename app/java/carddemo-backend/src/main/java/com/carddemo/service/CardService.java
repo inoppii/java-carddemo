@@ -25,4 +25,12 @@ public class CardService {
     public Optional<Card> getCardByNumber(String cardNumber) {
         return cardRepository.findByCardNumber(cardNumber);
     }
+
+    public Card updateCard(Integer id, Card updatedData) {
+        return cardRepository.findById(id).map(card -> {
+            card.setCardStatus(updatedData.getCardStatus());
+            // 再発行申請などの場合は、必要に応じて他のフィールドも更新
+            return cardRepository.save(card);
+        }).orElseThrow(() -> new RuntimeException("Card not found"));
+    }
 }

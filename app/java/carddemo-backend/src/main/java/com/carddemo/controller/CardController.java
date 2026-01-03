@@ -26,4 +26,9 @@ public class CardController {
     public List<Card> getCardsByAccount(@PathVariable Integer accountId) {
         return cardService.getCardsByAccountId(accountId);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Card> updateCard(@PathVariable Integer id, @RequestBody Card card) {
+        return ResponseEntity.ok(cardService.updateCard(id, card));
+    }
 }
