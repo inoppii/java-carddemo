@@ -16,10 +16,10 @@
 - [x] **タスク 2:** カード管理画面の実装 (一時停止、再発行申請)。 cad39f8
 - [x] **タスク: Conductor - User Manual Verification**
 
-## フェーズ 3: 管理者機能の実装
+## フェーズ 3: 管理者機能の実装 [checkpoint: 804d6fc]
 
 管理者向けダッシュボードを実装します。
 
 - [x] **タスク 1:** ユーザー管理画面の実装 (一覧、追加、削除)。 0ef91cd
 - [x] **タスク 2:** システム設定画面の実装。 4d868b1
-- [~] **タスク: Conductor - User Manual Verification**
+- [x] **タスク: Conductor - User Manual Verification** 804d6fc
