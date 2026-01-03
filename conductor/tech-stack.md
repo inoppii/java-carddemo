@@ -10,7 +10,7 @@
 ## 移行先スタック (クラウドネイティブ)
 - **バックエンド言語/フレームワーク:**
   - Node.js (TypeScript)
-  - Java (Spring Boot)
+  - Java (Spring Boot, Spring Batch)
 - **データベース:**
   - Cloud SQL for PostgreSQL (主要ストレージ)
 - **メッセージング/統合:**

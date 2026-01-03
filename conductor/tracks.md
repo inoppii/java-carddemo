@@ -19,8 +19,6 @@
 *リンク: [./conductor/tracks/google_cloud_deployment_20260104/](./conductor/tracks/google_cloud_deployment_20260104/)*
 
 
-## [~] トラック: ビジネスロジックの完全移植
-*リンク: [./conductor/tracks/business_logic_migration_20260104/](./conductor/tracks/business_logic_migration_20260104/)*
 
-## [ ] トラック: CI/CDパイプラインとクラウドデプロイ
+## [~] トラック: CI/CDパイプラインとクラウドデプロイ
 *リンク: [./conductor/tracks/cicd_deployment_20260104/](./conductor/tracks/cicd_deployment_20260104/)*

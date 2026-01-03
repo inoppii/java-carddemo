@@ -24,7 +24,7 @@
     - 口座情報・カード情報の更新および申請。
     - 請求書支払い (Bill Payment) 機能。
 - **Batch Processing:**
-    - 日次バッチ処理によるデータ更新。
+    - Spring Batch による日次・夜間バッチ処理（アカウント更新、取引集計）。
     - 各種レポートの生成。
     - 利息計算 (Interest Calculation) ロジックの実装。
 - **Authorization Simulation:**
