@@ -14,7 +14,7 @@
 
 - [x] **タスク 1:** 口座情報更新フォームの実装 (住所変更、限度額変更申請)。 1080125
 - [x] **タスク 2:** カード管理画面の実装 (一時停止、再発行申請)。 cad39f8
-- [~] **タスク: Conductor - User Manual Verification**
+- [x] **タスク: Conductor - User Manual Verification**
 
 ## フェーズ 3: 管理者機能の実装
 
