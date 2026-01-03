@@ -35,6 +35,17 @@ resource "google_sql_database" "database" {
   instance = google_sql_database_instance.instance.name
 }
 
+resource "google_sql_user" "user" {
+  name     = "carddemo_user"
+  instance = google_sql_database_instance.instance.name
+  password = var.db_password
+}
+
+variable "db_password" {
+  type      = string
+  sensitive = true
+}
+
 # Cloud Run (Backend)
 resource "google_cloud_run_service" "backend" {
   name     = "carddemo-backend"
@@ -47,6 +58,14 @@ resource "google_cloud_run_service" "backend" {
         env {
           name  = "SPRING_PROFILES_ACTIVE"
           value = "prod"
+        }
+        env {
+          name  = "CLOUD_SQL_CONNECTION_NAME"
+          value = google_sql_database_instance.instance.connection_name
+        }
+        env {
+          name  = "DB_PASSWORD"
+          value = var.db_password
         }
       }
     }
