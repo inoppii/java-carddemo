@@ -1,11 +1,12 @@
 # Stage 1: Build
-FROM gradle:8.5-jdk17-alpine as build
-WORKDIR /home/gradle/src
+FROM gradle:8.5-jdk17-alpine AS build
+WORKDIR /app
 COPY --chown=gradle:gradle . .
 RUN gradle build --no-daemon -x test
 
 # Stage 2: Run
 FROM eclipse-temurin:17-jre-alpine
-VOLUME /tmp
-COPY --from=build /home/gradle/src/build/libs/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+WORKDIR /app
+COPY --from=build /app/build/libs/*.jar app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
