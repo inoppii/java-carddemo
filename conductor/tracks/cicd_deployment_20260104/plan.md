@@ -1,10 +1,11 @@
 # プラン: CI/CDパイプラインとクラウドデプロイ
 
-## フェーズ 1: コンテナ化
+## フェーズ 1: コンテナ化 [checkpoint: 2be8c25]
 アプリケーションを Docker コンテナ化します。
 
 - [x] **タスク 1:** バックエンド (Java) の Dockerfile 作成とビルド検証。 850ac05
-- [~] **タスク: Conductor - User Manual Verification**
+- [x] **タスク 2:** フロントエンド (React) の Dockerfile (Nginx等) 作成とビルド検証。 ae037cc
+- [x] **タスク: Conductor - User Manual Verification** 2be8c25
 
 ## フェーズ 2: デプロイ自動化
 Google Cloud Build や GitHub Actions を設定します。
