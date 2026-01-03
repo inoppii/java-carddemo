@@ -10,6 +10,6 @@
 ## フェーズ 2: デプロイ自動化
 Google Cloud Build や GitHub Actions を設定します。
 
-- [ ] **タスク 1:** Cloud Build 設定ファイル (`cloudbuild.yaml`) の作成。
+- [x] **タスク 1:** Cloud Build 設定ファイル (`cloudbuild.yaml`) の作成。 be7cdc2
 - [ ] **タスク 2:** Terraform によるインフラ定義 (Cloud Run, Cloud SQL)。
 - [ ] **タスク: Conductor - User Manual Verification**
