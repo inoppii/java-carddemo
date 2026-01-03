@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { 
   Container, Typography, Paper, Table, TableBody, TableCell, 
-  TableContainer, TableHead, TableRow, Button, Dialog, 
-  DialogTitle, DialogContent, DialogActions, Grid, TextField,
+  TableContainer, TableHead, TableRow, Button, Grid, TextField,
   TablePagination, Box, FormControl, InputLabel, Select, MenuItem
 } from '@mui/material';
 import { useParams, useNavigate } from 'react-router-dom';
 import api from '../services/api';
+import TransactionDetailDialog from '../components/TransactionDetailDialog';
 
 interface Transaction {
   transactionId: string;
@@ -201,38 +201,11 @@ const TransactionList: React.FC = () => {
         />
       </TableContainer>
 
-      <Dialog open={open} onClose={handleClose} maxWidth="sm" fullWidth>
-        <DialogTitle>取引詳細</DialogTitle>
-        <DialogContent dividers>
-          {selectedTx && (
-            <Grid container spacing={2}>
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">取引ID</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body2">{selectedTx.transactionId}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">加盟店名</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1">{selectedTx.merchantName}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">場所</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1">{selectedTx.merchantCity}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">日時</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1">{new Date(selectedTx.transactionDate).toLocaleString('ja-JP')}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">金額</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1" fontWeight="bold">{selectedTx.currency} {selectedTx.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">種別</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1">{selectedTx.transactionType}</Typography></Grid>
-              
-              <Grid item xs={6}><Typography variant="caption" color="text.secondary">ステータス</Typography></Grid>
-              <Grid item xs={6}><Typography variant="body1">{selectedTx.status}</Typography></Grid>
-            </Grid>
-          )}
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>閉じる</Button>
-        </DialogActions>
-      </Dialog>
+      <TransactionDetailDialog 
+        open={open} 
+        onClose={handleClose} 
+        transaction={selectedTx} 
+      />
     </Container>
   );
 };
