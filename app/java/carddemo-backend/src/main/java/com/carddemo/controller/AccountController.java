@@ -26,4 +26,9 @@ public class AccountController {
     public List<Account> getAccountsByCustomer(@PathVariable Integer customerId) {
         return accountService.getAccountsByCustomerId(customerId);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Account> updateAccount(@PathVariable Integer id, @RequestBody Account account) {
+        return ResponseEntity.ok(accountService.updateAccount(id, account));
+    }
 }

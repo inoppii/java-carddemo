@@ -6,7 +6,7 @@
 
 - [x] **タスク 1:** 取引履歴一覧画面の実装 (フィルタリング、ページネーション)。 c51c317
 - [x] **タスク 2:** 取引詳細モーダル/画面の実装。 cef2187
-- [~] **タスク: Conductor - User Manual Verification**
+- [x] **タスク: Conductor - User Manual Verification**
 
 ## フェーズ 2: アカウント・カード管理機能の実装
 

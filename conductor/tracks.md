@@ -4,11 +4,7 @@
 
 ---
 
-## [~] トラック: アプリケーションロジックの移行の準備として、プログラムファイルごとに、詳細設計書を作成する
-*リンク: [./conductor/tracks/reverse_engineering_cobol_20260102/](./conductor/tracks/reverse_engineering_cobol_20260102/)*
-
 ## [x] トラック: 基本設計書の作成
-*リンク: [./conductor/tracks/basic_design_doc_20260102/](./conductor/tracks/basic_design_doc_20260102/)*
 
 ## [x] トラック: PostgreSQLデータベース物理設計とDDL作成
 *リンク: [./conductor/tracks/database_design_20260103/](./conductor/tracks/database_design_20260103/)*
@@ -22,7 +18,7 @@
 ## [x] トラック: Google Cloud 環境構築と初期デプロイ
 *リンク: [./conductor/tracks/google_cloud_deployment_20260104/](./conductor/tracks/google_cloud_deployment_20260104/)*
 
-## [ ] トラック: 業務画面の実装と機能拡充
+## [~] トラック: 業務画面の実装と機能拡充
 *リンク: [./conductor/tracks/feature_enhancement_20260104/](./conductor/tracks/feature_enhancement_20260104/)*
 
 ## [ ] トラック: ビジネスロジックの完全移植

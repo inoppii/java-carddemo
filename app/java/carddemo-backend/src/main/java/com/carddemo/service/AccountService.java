@@ -21,4 +21,13 @@ public class AccountService {
     public Optional<Account> getAccountById(Integer id) {
         return accountRepository.findById(id);
     }
+
+    public Account updateAccount(Integer id, Account updatedData) {
+        return accountRepository.findById(id).map(account -> {
+            account.setAccountStatus(updatedData.getAccountStatus());
+            account.setCreditLimit(updatedData.getCreditLimit());
+            // In a real app, balance/interest might have different rules
+            return accountRepository.save(account);
+        }).orElseThrow(() -> new RuntimeException("Account not found"));
+    }
 }

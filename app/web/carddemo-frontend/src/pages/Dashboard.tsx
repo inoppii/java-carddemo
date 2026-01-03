@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, Container, Grid, Card, CardContent, Divider, List, ListItem, ListItemText, Paper } from '@mui/material';
+import { Box, Typography, Container, Grid, Card, CardContent, Divider, List, ListItem, ListItemText, Paper, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 
 const Dashboard: React.FC = () => {
   const [accounts, setAccounts] = useState<any[]>([]);
   const user = JSON.parse(localStorage.getItem('user') || '{}');
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Demo: Load first 10 accounts
@@ -27,14 +29,32 @@ const Dashboard: React.FC = () => {
             <List>
               {accounts.map((acc) => (
                 <React.Fragment key={acc.accountId}>
-                  <ListItem>
+                  <ListItem 
+                    secondaryAction={
+                      <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                        <Button variant="outlined" size="small" sx={{ mr: 1 }} onClick={() => navigate(`/transactions/${acc.accountId}`)}>
+                          History
+                        </Button>
+                        <Button variant="outlined" size="small" color="secondary" onClick={() => navigate(`/accounts/edit/${acc.accountId}`)}>
+                          Edit
+                        </Button>
+                      </Box>
+                    }
+                  >
                     <ListItemText 
                         primary={`Account No: ${acc.accountNumber}`} 
-                        secondary={`Balance: $${acc.balance} | Limit: $${acc.creditLimit}`} 
+                        secondary={
+                          <React.Fragment>
+                            <Typography component="span" variant="body2" color="text.primary">
+                              Balance: ${acc.balance} | Limit: ${acc.creditLimit}
+                            </Typography>
+                            <br />
+                            <Typography component="span" variant="caption" color={acc.accountStatus === 'ACTIVE' ? 'success.main' : 'error'} fontWeight="bold">
+                              Status: {acc.accountStatus}
+                            </Typography>
+                          </React.Fragment>
+                        }
                     />
-                    <Typography variant="body2" color={acc.accountStatus === 'ACTIVE' ? 'success.main' : 'error'}>
-                        {acc.accountStatus}
-                    </Typography>
                   </ListItem>
                   <Divider />
                 </React.Fragment>
