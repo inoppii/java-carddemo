@@ -152,11 +152,15 @@ const UserManagement: React.FC = () => {
                     <Chip label="無効" color="error" variant="outlined" size="small" />
                   )}
                 </TableCell>
-                <TableCell variant="body2" color="text.secondary">
-                  {u.lastLogin ? new Date(u.lastLogin).toLocaleString('ja-JP') : '-'}
+                <TableCell>
+                  <Typography variant="body2" color="text.secondary">
+                    {u.lastLogin ? new Date(u.lastLogin).toLocaleString('ja-JP') : '-'}
+                  </Typography>
                 </TableCell>
-                <TableCell variant="body2" color="text.secondary">
-                  {new Date(u.createdAt).toLocaleDateString('ja-JP')}
+                <TableCell>
+                  <Typography variant="body2" color="text.secondary">
+                    {new Date(u.createdAt).toLocaleDateString('ja-JP')}
+                  </Typography>
                 </TableCell>
                 <TableCell align="center">
                   <Switch 
