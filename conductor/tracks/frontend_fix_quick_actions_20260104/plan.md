@@ -18,7 +18,7 @@
     - 遷移先の画面コンポーネントが存在しない場合は、プレースホルダー（または簡易実装）を作成し、ルーティングに追加する。
 - [x] **タスク 2:** バックエンドの修正（必要な場合）。 (Not needed, existing endpoints sufficient)
     - 必要な API が不足している場合は実装する（今回はフロントエンドのリンク修正が主目的のため、モックデータ等で対応する場合もあり）。
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 2: 修正と実装' (Protocol in workflow.md)**
+- [~] **タスク: Conductor - User Manual Verification 'フェーズ 2: 修正と実装' (Protocol in workflow.md)**
 
 ## フェーズ 3: 動作確認とデプロイ
 修正後の動作を確認し、本番環境（Cloud Run）へデプロイします。
