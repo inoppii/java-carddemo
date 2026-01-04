@@ -27,4 +27,4 @@
     - 修正したリンクが正常に機能することを確認する。
 - [x] **タスク 2:** 修正版のデプロイ。
     - Cloud Build をトリガーして、修正をデプロイする。
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認とデプロイ' (Protocol in workflow.md)**
+- [~] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認とデプロイ' (Protocol in workflow.md)**
