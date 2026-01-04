@@ -1,0 +1,8 @@
+{
+  "track_id": "frontend_fix_quick_actions_20260104",
+  "type": "bug",
+  "status": "new",
+  "created_at": "2026-01-04T00:00:00Z",
+  "updated_at": "2026-01-04T00:00:00Z",
+  "description": "フロントエンド機能不全の修正 (Quick Actions)"
+}
