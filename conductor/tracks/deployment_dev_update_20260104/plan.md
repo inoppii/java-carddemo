@@ -1,13 +1,11 @@
 # プラン: 完成したプログラムの開発環境デプロイ
 
-## フェーズ 1: デプロイ準備
+## フェーズ 1: デプロイ準備 [checkpoint: 8963e72]
 デプロイに必要なリソースと設定の確認を行います。
 
 - [x] **タスク 1:** データベース接続設定の確認と更新。 a704836
-    - `application.properties` (または環境変数) の接続情報が Cloud SQL の開発環境インスタンスを指しているか確認する。
 - [x] **タスク 2:** フロントエンドの環境変数設定。 428ebe2
-    - API エンドポイント等の環境変数が開発環境のバックエンド URL を指すように設定されているか確認する。
-- [~] **タスク: Conductor - User Manual Verification 'フェーズ 1: デプロイ準備' (Protocol in workflow.md)筋**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 1: デプロイ準備' (Protocol in workflow.md)** 8963e72
 
 ## フェーズ 2: デプロイ実行
 CI/CD パイプラインを実行し、各コンポーネントをデプロイします。
