@@ -12,6 +12,22 @@ variable "region" {
   default = "asia-northeast1"
 }
 
+data "google_project" "project" {
+}
+
+# Cloud Build IAM Permissions
+resource "google_project_iam_member" "cloudbuild_run_admin" {
+  project = var.project_id
+  role    = "roles/run.admin"
+  member  = "serviceAccount:${data.google_project.project.number}-compute@developer.gserviceaccount.com"
+}
+
+resource "google_project_iam_member" "cloudbuild_sa_user" {
+  project = var.project_id
+  role    = "roles/iam.serviceAccountUser"
+  member  = "serviceAccount:${data.google_project.project.number}-compute@developer.gserviceaccount.com"
+}
+
 # Artifact Registry
 resource "google_artifact_registry_repository" "repo" {
   location      = var.region
