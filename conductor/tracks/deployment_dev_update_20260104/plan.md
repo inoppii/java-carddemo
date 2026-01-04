@@ -14,7 +14,7 @@ CI/CD パイプラインを実行し、各コンポーネントをデプロイ�
     - スキーマ作成スクリプト (`schema.sql`) とデータロードスクリプト (`data.sql`) を実行して、DB を最新化する。
 - [x] **タスク 2:** Cloud Build トリガーの実行、または手動ビルド・デプロイ。 a704836
     - `gcloud builds submit` コマンド等を使用して、`cloudbuild.yaml` に基づくビルドとデプロイを実行する。
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 2: デプロイ実行' (Protocol in workflow.md)**
+- [~] **タスク: Conductor - User Manual Verification 'フェーズ 2: デプロイ実行' (Protocol in workflow.md)**
 
 ## フェーズ 3: 動作確認
 デプロイ後のシステムが正常に動作することを確認します。
