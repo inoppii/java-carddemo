@@ -18,11 +18,11 @@ public class AdminController {
     @GetMapping("/system-info")
     public ResponseEntity<Map<String, Object>> getSystemInfo() {
         Map<String, Object> info = new HashMap<>();
-        info.add("status", "UP");
-        info.add("version", "0.0.1-SNAPSHOT");
-        info.add("currentTime", LocalDateTime.now());
-        info.add("maintenanceMode", maintenanceMode);
-        info.add("javaVersion", System.getProperty("java.version"));
+        info.put("status", "UP");
+        info.put("version", "0.0.1-SNAPSHOT");
+        info.put("currentTime", LocalDateTime.now());
+        info.put("maintenanceMode", maintenanceMode);
+        info.put("javaVersion", System.getProperty("java.version"));
         return ResponseEntity.ok(info);
     }
 
