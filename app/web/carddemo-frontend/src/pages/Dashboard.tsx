@@ -137,14 +137,57 @@ const Dashboard: React.FC = () => {
               <Typography variant="h6" gutterBottom>
                 クイックアクション
               </Typography>
-              <Typography variant="body2" component="div">
-                <ul>
-                  <li>取引履歴の確認</li>
-                  <li>限度額引き上げ申請</li>
-                  <li>カードの紛失・盗難連絡</li>
-                  <li>登録住所の変更</li>
-                </ul>
-              </Typography>
+              <List disablePadding>
+                <ListItem 
+                  disablePadding 
+                  sx={{ 
+                    py: 0.5, 
+                    cursor: accounts.length > 0 ? 'pointer' : 'default',
+                    '&:hover': accounts.length > 0 ? { bgcolor: 'rgba(255, 255, 255, 0.1)' } : {} 
+                  }}
+                  onClick={() => accounts.length > 0 && navigate(`/transactions/${accounts[0].accountId}`)}
+                >
+                  <ListItemText primary="• 取引履歴の確認" />
+                </ListItem>
+                <ListItem 
+                  disablePadding 
+                  sx={{ 
+                    py: 0.5, 
+                    cursor: accounts.length > 0 ? 'pointer' : 'default',
+                    '&:hover': accounts.length > 0 ? { bgcolor: 'rgba(255, 255, 255, 0.1)' } : {} 
+                  }}
+                  onClick={() => accounts.length > 0 && navigate(`/accounts/edit/${accounts[0].accountId}`)}
+                >
+                  <ListItemText primary="• 限度額引き上げ申請" />
+                </ListItem>
+                <ListItem 
+                  disablePadding 
+                  sx={{ 
+                    py: 0.5, 
+                    cursor: accounts.length > 0 ? 'pointer' : 'default',
+                    '&:hover': accounts.length > 0 ? { bgcolor: 'rgba(255, 255, 255, 0.1)' } : {} 
+                  }}
+                  onClick={() => accounts.length > 0 && navigate(`/cards/${accounts[0].accountId}`)}
+                >
+                  <ListItemText primary="• カードの紛失・盗難連絡" />
+                </ListItem>
+                <ListItem 
+                  disablePadding 
+                  sx={{ 
+                    py: 0.5, 
+                    cursor: accounts.length > 0 ? 'pointer' : 'default',
+                    '&:hover': accounts.length > 0 ? { bgcolor: 'rgba(255, 255, 255, 0.1)' } : {} 
+                  }}
+                  onClick={() => accounts.length > 0 && navigate(`/accounts/edit/${accounts[0].accountId}`)}
+                >
+                  <ListItemText primary="• 登録住所の変更" />
+                </ListItem>
+              </List>
+              {accounts.length === 0 && (
+                <Typography variant="caption" sx={{ opacity: 0.7 }}>
+                  ※アクションを利用するには口座が必要です
+                </Typography>
+              )}
             </CardContent>
           </Card>
           
