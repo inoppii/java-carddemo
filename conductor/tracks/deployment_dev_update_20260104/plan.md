@@ -16,9 +16,9 @@ CI/CD パイプラインを実行し、各コンポーネントをデプロイ�
     - `gcloud builds submit` コマンド等を使用して、`cloudbuild.yaml` に基づくビルドとデプロイを実行する。
 - [x] **タスク: Conductor - User Manual Verification 'フェーズ 2: デプロイ実行' (Protocol in workflow.md)** d86ea66
 
-## フェーズ 3: 動作確認
+## フェーズ 3: 動作確認 [checkpoint: ddb3966]
 デプロイ後のシステムが正常に動作することを確認します。
 
 - [x] **タスク 1:** 統合動作テスト。 a704836
     - フロントエンドからログインし、主要な機能（一覧表示、詳細表示、登録・更新等）が動作することを確認する。
-- [~] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認' (Protocol in workflow.md)**
+- [x] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認' (Protocol in workflow.md)** ddb3966
