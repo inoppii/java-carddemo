@@ -21,4 +21,4 @@ CI/CD パイプラインを実行し、各コンポーネントをデプロイ�
 
 - [x] **タスク 1:** 統合動作テスト。 a704836
     - フロントエンドからログインし、主要な機能（一覧表示、詳細表示、登録・更新等）が動作することを確認する。
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認' (Protocol in workflow.md)**
+- [~] **タスク: Conductor - User Manual Verification 'フェーズ 3: 動作確認' (Protocol in workflow.md)**
