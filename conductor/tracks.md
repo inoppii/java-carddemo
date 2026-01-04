@@ -18,7 +18,8 @@
 ## [x] トラック: Google Cloud 環境構築と初期デプロイ
 *リンク: [./conductor/tracks/google_cloud_deployment_20260104/](./conductor/tracks/google_cloud_deployment_20260104/)*
 
+## [~] トラック: 完成したプログラムの開発環境デプロイ
+*リンク: [./conductor/tracks/deployment_dev_update_20260104/](./conductor/tracks/deployment_dev_update_20260104/)*
 
 
-## [~] トラック: CI/CDパイプラインとクラウドデプロイ
-*リンク: [./conductor/tracks/cicd_deployment_20260104/](./conductor/tracks/cicd_deployment_20260104/)*
+

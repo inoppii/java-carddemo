@@ -7,7 +7,7 @@
     - `application.properties` (または環境変数) の接続情報が Cloud SQL の開発環境インスタンスを指しているか確認する。
 - [x] **タスク 2:** フロントエンドの環境変数設定。 428ebe2
     - API エンドポイント等の環境変数が開発環境のバックエンド URL を指すように設定されているか確認する。
-- [ ] **タスク: Conductor - User Manual Verification 'フェーズ 1: デプロイ準備' (Protocol in workflow.md)**
+- [~] **タスク: Conductor - User Manual Verification 'フェーズ 1: デプロイ準備' (Protocol in workflow.md)筋**
 
 ## フェーズ 2: デプロイ実行
 CI/CD パイプラインを実行し、各コンポーネントをデプロイします。

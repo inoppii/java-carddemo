@@ -20,3 +20,7 @@
   - UI ライブラリ: Material Design コンポーネント
 - **クラウドプラットフォーム:**
   - Google Cloud Platform (GCP)
+- **CI/CD・自動化:**
+  - Google Cloud Build
+  - Docker
+  - Terraform
